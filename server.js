@@ -13,6 +13,8 @@ mongoose
 
 const app = express();
 
+app.use("/", express.static("public"));
+
 // middleware
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
